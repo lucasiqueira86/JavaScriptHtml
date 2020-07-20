@@ -1,0 +1,18 @@
+<input type="number" id="altura" placeholder="Altura" ><br>
+<input type="number" id="peso" placeholder="peso"><br>
+<button onclick="calcular()"> Calcular Imc </button><br>
+<div id="resultado"> Resultado </div>
+
+
+<script>
+
+    function calcular(){
+
+        let alt = document.getElementById('altura').value;
+        let pes = document.getElementById('peso').value;
+
+       let imcres = parseFloat(pes) / (parseFloat(alt) * parseFloat(alt)) 
+       resultado.innerHTML =  (imcres)
+
+    }
+</script>
