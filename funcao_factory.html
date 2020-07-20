@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title></title>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+   
+<script type="text/babel">
+
+
+let Bicicleta1 = {
+    cor: 'branca',
+    marcha: 'unica',
+    aro:12,
+    pedalar() {console.log('Método pedalar executado')}
+    }
+
+
+
+    let Bicicleta2 = {
+    cor: 'Vermelha',
+    marcha: '18',
+    aro:26,
+    pedalar() {console.log('Método pedalar executado')}
+    }
+
+
+
+    console.log(Bicicleta1)
+    console.log(Bicicleta2)
+
+    let bicicletaFactory = function(){
+        return {
+            cor: 'branca'
+            marcha: 'unica'
+             aro:12,
+             pedalar(){console.log('Método pedalar executado')}
+
+             }   
+    
+     }
+
+let Bicicleta3 = bicicletaFactory()
+console.log(Bicicleta3)
+concole.log(`Cor:${bicicleta3.cor}`
+bicicleta3.pedalar
+
+
+
+
+
+</script>
+</head>
+    <body>
+
+
+
+
+
+    </body>
+</html>
