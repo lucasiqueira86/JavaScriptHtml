@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+   <title> Converter</title>
+   
+   <style type="text/css"> 
+
+body{
+    background: rgb(146, 146, 211);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+    
+
+</head>
+<body>
+
+    <div class="container">
+        <input type="number" name="pol" id="pol">
+        <button onclick="converter()">Converter</button>
+        <div id="cm"></div>
+
+        
+    </div>
+
+    <script type="text/javascript">
+
+            function converter(){
+
+                let pol= document.getElementById("pol").value;
+                let cm = document.getElementById("cm");
+
+                cm.innerHTML = pol * 2.54 + "cm";
+           }
+
+    </script>
+
+
+
+
+</body>
+<html>       
+
