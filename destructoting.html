@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title></title>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+   
+<script type="text/babel">
+
+//destructuring - ele tira valores de dentro de uma estrutura.
+
+//abaixo no sestamos colocando o abacaxi gravado na variavel 'a'
+/*let frutas = ['abacaxi','uva','pera','mamao']
+
+let a = frutas [0]
+
+console.log(a)
+*/
+// ----------------------------------------
+// abaixo estamos fazendo a mesma operacao de cima no entanto com um codigo mais limpo
+let frutas1 = ['abacaxi','uva','pera','mamao']
+
+//let [a,b] = frutas1
+let [a, b, , c] = frutas1  //aqui estamos pulando uma variavel o c vai ser o mamao
+
+let [a,b ='abacate',c , d, e = 'banana' ] = frutas
+
+console.log(a,b,c)
+console.log(b)
+
+
+let coisas= [['abacaxi', 'uva', 'pera', 'mamao'], ['jose', 'maria']]
+
+let [,[,]n2] = coisas
+
+console.log(n2) 
+//acima estamos retirando um valor dentro do array por isso estamos utilizando  dois [[]]
+
+
+
+
+</script>
+</head>
+    <body>
