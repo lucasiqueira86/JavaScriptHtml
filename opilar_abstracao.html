@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title></title>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+   
+<script type="text/babel">
+
+// EX: conta bancaria é uma entidade do mundo real que pode serabstraida para dentro da aplicação.
+
+// Class representa o modelo da entidade/ objeto
+// EX: RECEITA DO BOLO É O O MODELO OU CLASSE E O BOLO PRONTO É O ENTIDADE OU OBJETO.
+
+class  ContaBancaria{
+//agencia
+//numeroConta
+//saldo
+//limite    
+constructor(){
+this.agencia = 175
+this.conta = 8351125
+this.saldo = 50
+this.limite = 450
+}
+depositar(valorDeposito){
+    this.saldo += valorDeposito
+}
+sacar(valorSaque){
+this.saldo = this.saldo - valorSaque
+}
+consultarSaldo(){
+    return this.saldo 
+}
+}
+// new inf que eu quero utilizar a class acima dentro do meu codigo.
+
+let x = new ContaBancaria()   //--> aqui ele virou um objeto.
+let y = new ContaBancaria()
+
+document.write(x.consultarSaldo()) //consultar o saldo da conta
+x.depositar(450)
+document.write(x.consultarSaldo())
+x.sacar(200)
+document.write(x.consultarSaldo())
+
+
+document.write(y.consultarSaldo())
+
+
+//OBS: a conta y permanece intacta pois nos apenas alteramos a conta x.
+
+
+
+</script>
+</head>
+    <body>
+
+
+
+
+
+    </body>
+</html>
