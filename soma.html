@@ -1,0 +1,18 @@
+<input type="number" id="valor1">
+<input type="number" id="valor2"><br>
+<button  onclick="somar()">Somar</button><br>
+<div id='resultado1'></div>
+
+<script>
+
+    function somar(){
+        
+        let num1 = document.getElementById('valor1').value;
+        let num2 = document.getElementById('valor2').value;
+
+        let resultado = parseInt(num1) + parseInt(num2);
+
+        resultado1.innerHTML = resultado
+
+            }
+</script>
