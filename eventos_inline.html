@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div id ='app'>
+
+
+    <button onclick="mostraAlerta()">Clique em mim</button> <br><br><br>
+    <input type='text' name='nome' id="nome"class='nome'/>
+    <button class="botao">Adicionar</button>
+
+</div>
+
+<!-- querySelector é melhor que que o get elementby id ou outros e ambos servem para manipular os elementos da DOM. -->
+<script>
+
+var inputElement = document.getElementById('nome')
+var inputElement = document.getElementsByName('input')
+var inputElement = document.getElementsByClassName('nome')
+var inputElement = document.querySelector('div#app input');
+var inputElement = document.querySelector('input[name=nome');
+
+</script>
+
+
+
+
+
+    <!-- <script> botao clique em mim
+
+     function mostraAlerta(){
+    alert('Botao foi clicado')
+
+     }
+
+    </script>-->
+
+
+
+
+
+
+
+
+
+</body>
+</html>
