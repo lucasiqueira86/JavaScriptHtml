@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CodePen Home Glow effect on hover - Menu</title>
+	<link rel="stylesheet" href="./main.css">
+</head>
+
+
+<style>
+
+
+*{
+	box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+}
+body {
+  font-size: 24px;
+  color: #ffffff;
+  background: #111111;
+  font-family: consolas;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+  list-style: none;
+  box-shadow: 0 15px 40px #000;
+}
+ul li {
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.5s;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul li:hover {
+  color: #000;
+}
+ul li:before,
+ul li:after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #00ccff;
+  z-index: -1;
+  transition: transform 0.5s;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+ul li:after {
+  z-index: -2;
+  filter: blur(20px);
+}
+ul li:hover:before,
+ul li:hover:after {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+
+
+
+
+</style>
+<body>
+	<ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Our Work</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
