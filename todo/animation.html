@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+div {
+  width: 100px;
+  height: 100px;
+  background:black;
+  transition: width 2s;
+  transition: ;
+}
+
+div:hover {
+  width: 300px;
+  background-color: blue;
+  border-radius: 20px;
+  rotate: (x);
+}
+
+
+
+
+button{
+    background-color: red;
+    width: 50px;
+    transition: width 1s;
+   
+   
+}
+
+
+    button:hover{
+        width: 100px;
+        border-radius: 20px;
+        background-color: blueviolet;
+        rotate(20 );
+}
+
+#cubo{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  animation-name: crazy;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+
+@keyframes  crazy {
+  0%{ left:0px; top:0px;}
+  50% {  left:200px; top:0px;}
+  75% {  left:200px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+<div></div><br><br>
+<button>click</button><br><br>
+<div id="cubo">Lucas</div>
+
+
+<div></div><br>
+<div></div><br>
+<div></div><br>
+<div></div><br>
+<div></div><br>
+<div></div><br>
+
+
+
+
+</body>
+</html>
