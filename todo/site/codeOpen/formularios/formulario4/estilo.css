@@ -1,0 +1,48 @@
+
+body{
+background:linear-gradient(-45deg,#8A2BE2,#7B68EE,#8A2BE2,#9370DB)
+}
+
+.box{
+    background:#363636;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    position: absolute;
+    top:50%; 
+    left:50%;
+    transform: translateX(-50%);   /* transform:translate(-50,-50);é a mesma coisa */
+    transform: translateY(-50%);
+    border: 5px solid blue;
+
+}
+
+h1{
+    color:white;
+    position: relative;
+    left: 100px;
+}
+
+input{
+width: 200px;
+height: 40px;
+border-radius: 20px;
+border:2px solid;
+border-color: 	#00FF00;
+background: black;
+position: relative;
+left:60px;
+
+
+}
+
+input:hover{
+ width: 250px;
+background:#0000FF;
+transition: 1s;
+}
+
+#btn{
+
+    text-color:white;
+}
