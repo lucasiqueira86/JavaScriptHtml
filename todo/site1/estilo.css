@@ -1,0 +1,94 @@
+html, body{
+margin: 0;
+padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+#quadrado{
+
+width: 700px;
+height: 100vh;
+background:linear-gradient(90deg, #CE24A9,	#FF00FF, #9400D3
+);
+}
+
+#quadrado1{
+ width: 1500px;
+ height: 445px;
+ background-color: black;
+ position:absolute;
+ right:0;
+ top:15%;
+ left: 5%;
+}
+
+img{
+  position: absolute;
+  top:30%;
+
+}
+
+#text{
+ 
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top:12%;
+  left: 30%;
+}
+
+p{
+  color:white;
+  font-weight: bolder;
+  font-size:70px;
+}
+
+button{
+  position:absolute;
+  left:50%;
+  bottom:5%;
+  width: 200px;
+  height: 55px;
+  border-radius: 20px;
+  background:#7464D6;
+  /* border: 3px solid black; */
+  
+}
+button:hover{
+  width: 300px;
+  transition: 2s;
+  background-color:#9400D3  ;
+
+}
+span{
+  
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font: bold;
+  font-size: 30px;
+ 
+
+}
