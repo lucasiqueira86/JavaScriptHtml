@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css"> </link>
+</head>
+<body>
+
+    <div id="container">
+
+    <header>
+        <ul>
+            <li>About</li>
+            <li>Information</li>
+        </ul>
+    </header>
+
+    <main>
+        <p>Your new way to lose <br>weight!</p>
+            <img  id='ela'src="../site3/Imagem/pexels-scott-webb-28054.png"></img>
+            <img  id='sup' src="../site3/Imagem/6162v3966fg1 (1).png"></img>
+        </main>
+
+        <button id="buy"  ><span>Buy Now</span></button>
+  <p id="ci" >Calculo IMC</p>
+   <div id="imc">
+       
+       <label>Digite sua altura</label>
+       <input id="altura" type="numer" placeholder='altura'></input><br><br>
+       <label>Digite seu peso</label>
+       <input id="peso" type="number" placeholder='peso'></input><br><br>
+
+       <button onclick="calcular()" id="cal">Calcular</button> <br><br>
+
+      <input id="resp" type="number" placeholder="resposta"></input>
+
+   </div>
+
+
+
+
+
+   <script>
+
+       function calcular(){
+
+   let alt= document.querySelector('#altura').value;
+   
+   let pes = document.querySelector('#peso').value;
+
+   let imcres =  parseFloat(pes) / (parseFloat(alt) * parseFloat(alt)) 
+           resp.value =  imcres
+         
+}
+
+
+   </script>
+
+</div>  
+      
+ </body>
+</html>
